@@ -1,0 +1,50 @@
+// ---------------------------------------------------------------------------
+// Imports
+
+@import "base";
+@import "defines";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans); 
+
+/* -------------------------------------------------------------------------*/
+/* Layout */
+
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	color: $color--text;
+	font-family: "Open Sans", "Helvetica Neue", "Helvetica", sans-serif;
+	font-weight: 400;
+	font-size: medium;
+	line-height: 140%;
+}
+
+
+
+// -------------------------------- //
+//			Breakpoints				//
+// -------------------------------- //
+
+@include at-breakpoint($baby){
+	body .container{
+		@include span-columns(10);
+	}
+
+	article {
+	
+	}
+}//$baby
+
+@include at-breakpoint($daddy){
+	body .container{
+		@include span-columns(10);
+		@include push(1);
+	}
+	article {
+		@include span-columns(8,10)
+	}
+}//$daddy

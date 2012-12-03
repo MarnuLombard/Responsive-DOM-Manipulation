@@ -1,0 +1,35 @@
+// ---------------
+// Imports		//
+// ---------------
+$legacy-support-for-ie6: true;
+$legacy-support-for-ie7: true;
+$legacy-support-for-ie8: true; 
+$legacy-support-for-mozilla: true;
+@import "normalize";
+
+@import "compass/css3";
+@import "compass/css3/border-radius";
+@import "compass/css3/font-face";
+
+@import "susy";
+@import "sassy-buttons";
+
+
+
+// ---------------
+// Basic Grid	//
+// ---------------
+
+$total-columns  : 12;
+$column-width   : 4em;
+$gutter-width   : 1em;
+$grid-padding   : $gutter-width;
+
+// -------------------
+// Alt breakpoints	//
+// -------------------
+
+$baby		: 8;
+$daddy		: 55em 12;
+
+
